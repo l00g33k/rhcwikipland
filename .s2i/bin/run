@@ -3,4 +3,5 @@
 echo Running run script
 echo Hello > run.txt
 
+read
 exit 0
