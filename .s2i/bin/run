@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Running run script
+echo Hello > run.txt
+
+exit 0
