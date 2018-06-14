@@ -3,3 +3,4 @@
 echo Running assemble script
 echo Hello > assemble.txt
 
+exit 0
