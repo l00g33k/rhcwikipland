@@ -3,6 +3,9 @@
 echo Running run script
 echo Hello > run.txt
 
-while [[ 1 ]]; do sleep 1; date -R; done
+cd WikiPland
+perl l00httpd.pl cliport=8080
+
+#while [[ 1 ]]; do sleep 1; date -R; done
 
 exit 0
