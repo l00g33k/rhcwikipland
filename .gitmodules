@@ -1,0 +1,3 @@
+[submodule "WikiPland"]
+	path = WikiPland
+	url = https://github.com/l00g33k/WikiPland.git
