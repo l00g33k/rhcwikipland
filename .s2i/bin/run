@@ -4,5 +4,5 @@ echo Running run script
 echo Hello > run.txt
 
 cd WikiPland
-perl l00httpd.pl cliport=8080
+perl l00httpd.pl ctrlport=8080 debug=7
 
