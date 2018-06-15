@@ -6,7 +6,8 @@ echo Hello > run.txt
 cd WikiPland
 while [[ 1 ]]
 do
-    source runhelper
+    source ./runhelper
+    sleep 1
     echo Restarting
 done
 
