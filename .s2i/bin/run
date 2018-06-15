@@ -6,7 +6,7 @@ echo Hello > run.txt
 cd WikiPland
 while [[ 1 ]]
 do
-    perl l00httpd.pl ctrlport=8080 debug=7
+    perl l00httpd.pl cliport=8080 debug=7
     echo Restarting
 done
 
