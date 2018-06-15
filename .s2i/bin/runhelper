@@ -1,0 +1,4 @@
+#!/bin/bash
+
+perl l00httpd.pl cliport=8080 debug=7
+
