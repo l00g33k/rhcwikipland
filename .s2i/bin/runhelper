@@ -2,5 +2,5 @@
 
 # quit to force redeploy once an hour
 perl l00httpd.pl quitinsec=3600 cliport=8080 debug=7
-sleep 3
+sleep 32
 
