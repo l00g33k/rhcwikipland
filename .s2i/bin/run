@@ -6,7 +6,6 @@ cd WikiPland
 while [[ 1 ]]
 do
     source /opt/app-root/src/.s2i/bin/runhelper
-    sleep 1
     echo Restarting
 done
 
