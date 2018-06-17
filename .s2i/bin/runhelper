@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # quit to force redeploy once an hour
-perl l00httpd.pl quitinsec=3600 cliport=8080 debug=7
-sleep 32
+perl l00httpd.pl fixedport quitinsec=3600 cliport=8080 debug=7
+#perl l00httpd.pl fixedport cliport=8080 debug=7
+sleep 10
 
