@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# quit to force redeploy once an hour
-perl l00httpd.pl fixedport quitinsec=3600 cliport=8080 debug=7
-#perl l00httpd.pl fixedport cliport=8080 debug=7
-sleep 10
+# quit and restart l00httpd.pl (keeping pod and container running) every 900 seconds
+perl l00httpd.pl fixedport quitinsec=900 cliport=8080 debug=7
+sleep 2
 
