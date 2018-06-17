@@ -6,7 +6,7 @@
         "app": "dancer-example",
         "template": "dancer-example"
     },
-    "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/dancer-ex/blob/master/README.md.",
+    "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/.../blob/master/README.md.(TBD)",
     "metadata": {
         "annotations": {
             "description": "An example Dancer application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/dancer-ex/blob/master/README.md.",
