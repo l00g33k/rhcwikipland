@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# dump server log:
+
+wget -O - http://localhost:20337/view.htm?path=l00://server.log | perl -ne "s/<.+?>//g; print,if(/^\d+ :/);" | less -N
