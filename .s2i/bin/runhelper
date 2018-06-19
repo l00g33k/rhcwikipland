@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # quit and restart l00httpd.pl (keeping pod and container running) every 900 seconds
-perl l00httpd.pl fixedport quitinsec=900 cliport=8080 debug=7
+perl l00httpd.pl fixedport quitinsec=900 ctrlport=8080 debug=4
 sleep 2
 
