@@ -169,11 +169,11 @@
                                         "path": "/hello.htm?message=livenessProbe&submit=Submit",
                                         "port": 8080
                                     },
-                                    "initialDelaySeconds": 30,
-                                    "periodSeconds": 60,
+                                    "initialDelaySeconds": 20,
                                     "_-_comment_-periodSeconds" : "newly added for 60 seconds interval",
-                                    "failureThreshold": 2,
+                                    "periodSeconds": 60,
                                     "_-_comment_-failureThreshold" : "newly added: fail 2 times before restart",
+                                    "failureThreshold": 1,
                                     "timeoutSeconds": 3
                                 },
                                 "name": "dancer-example",
