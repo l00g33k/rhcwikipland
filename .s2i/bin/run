@@ -3,9 +3,9 @@
 echo Running run script
 
 cd WikiPland
-while [[ 1 ]]
-do
+#while [[ 1 ]]
+#do
     source /opt/app-root/src/.s2i/bin/runhelper
-    echo Restarting
-done
+#    echo Restarting
+#done
 
