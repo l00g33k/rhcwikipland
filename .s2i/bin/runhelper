@@ -2,6 +2,6 @@
 
 # quit and restart l00httpd.pl (keeping pod and container running) every 900 seconds
 # just quit to cause Docker container to be restarted
-perl l00httpd.pl fixedport quitinsec=900 cliport=8080 debug=2
+perl l00httpd.pl fixedport quitinsec=900 cliport=8080 debug=1
 #sleep 2
 
