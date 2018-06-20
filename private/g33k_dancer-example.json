@@ -1,11 +1,12 @@
 {
     "apiVersion": "v1",
     "kind": "Template",
+    "_-_comment_" : "a comment; will be ignored by openshift/origin",
     "labels": {
         "app": "dancer-example",
         "template": "dancer-example"
     },
-    "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/openshift/dancer-ex/blob/master/README.md.",
+    "message": "The following service(s) have been created in your project: ${NAME}.\n\nFor more information about using this template, including OpenShift considerations, see https://github.com/.../blob/master/README.md.(TBD)",
     "metadata": {
         "annotations": {
             "description": "An example Dancer application with no database. For more information about using this template, including OpenShift considerations, see https://github.com/openshift/dancer-ex/blob/master/README.md.",
@@ -163,11 +164,16 @@
                                 ],
                                 "image": " ",
                                 "livenessProbe": {
+                                    "_-_comment_" : "leave an publicly visible footprint of the livenessProbe, at 60s interval",
                                     "httpGet": {
-                                        "path": "/",
+                                        "path": "/hello.htm?message=livenessProbe&submit=Submit",
                                         "port": 8080
                                     },
-                                    "initialDelaySeconds": 30,
+                                    "initialDelaySeconds": 20,
+                                    "_-_comment_-periodSeconds" : "newly added for 60 seconds interval",
+                                    "periodSeconds": 60,
+                                    "_-_comment_-failureThreshold" : "newly added: fail 2 times before restart",
+                                    "failureThreshold": 1,
                                     "timeoutSeconds": 3
                                 },
                                 "name": "dancer-example",
@@ -176,9 +182,9 @@
                                         "containerPort": 8080
                                     }
                                 ],
-                                "readinessProbe": {
+                                "_-_no__readinessProbe": {
                                     "httpGet": {
-                                        "path": "/",
+                                        "path": "/hello.htm?message=readinessProbe&submit=Submit",
                                         "port": 8080
                                     },
                                     "initialDelaySeconds": 3,

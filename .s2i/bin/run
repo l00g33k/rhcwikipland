@@ -1,8 +1,11 @@
 #!/bin/bash
 
 echo Running run script
-echo Hello > run.txt
 
 cd WikiPland
-perl l00httpd.pl ctrlport=8080 debug=7
+#while [[ 1 ]]
+#do
+    source /opt/app-root/src/.s2i/bin/runhelper
+#    echo Restarting
+#done
 
